@@ -24,8 +24,9 @@ stack[MAX] stores opening brackets such as (, {, [.
 top keeps track of the index of the top element.
 top = -1 indicates that the stack is empty at the start.
 
-Q2. What functions are implemented in the program and what is their purpose?
-Answer:
+## Q2. What functions are implemented in the program and what is their purpose?
+
+### Answer:
 The program implements two main stack functions: push() and pop().
 
 Function 1: push(char c)
@@ -37,7 +38,7 @@ void push(char c) {
     stack[top] = c;
 }
 
-EXPLAINATION:
+### EXPLAINATION:
 The top value is increased by 1.
 The character c is stored at the top position of the stack.
 This function is called whenever an opening bracket is found.
@@ -49,13 +50,14 @@ To remove and return the top element from the stack.
 char pop() {
     return stack[top--];
 }
-EXPLAINATION:
+### EXPLAINATION:
 The function returns the element currently at the top.
 After returning, the top value is decreased.
 This function is used when a closing bracket is encountered.
 
-Q3. How is the main() function organized?
-Answer:
+## Q3. How is the main() function organized?
+
+###Answer:
 The main() function controls the entire flow of the program.
 
 STEPS performed in main():
@@ -76,8 +78,9 @@ If the stack is empty, print BALANCED.
 Otherwise, print NOT BALANCED.
 This ensures all brackets are properly opened and closed in the correct order.
 
-Q4. What is the sample output of a complete run of the program?
-Answer:
+## Q4. What is the sample output of a complete run of the program?
+
+### gAnswer:
 Sample Input:
 Enter expression: {[()]}
 Sample Output:
