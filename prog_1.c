@@ -5,13 +5,13 @@
 char stack[MAX];
 int top = -1;
 
-// push into stack
+
 void push(char c) {
     top++;
     stack[top] = c;
 }
 
-// pop from stack
+
 char pop() {
     return stack[top--];
 }
@@ -26,15 +26,15 @@ int main() {
 
     for (i = 0; exp[i] != '\0'; i++) {
 
-        // opening brackets
+        
         if (exp[i] == '(' || exp[i] == '{' || exp[i] == '[') {
             push(exp[i]);
         }
 
-        // closing brackets
+        
         if (exp[i] == ')' || exp[i] == '}' || exp[i] == ']') {
 
-            // if stack empty
+            
             if (top == -1) {
                 printf("NOT BALANCED\n");
                 return 0;
@@ -42,7 +42,7 @@ int main() {
 
             last = pop();
 
-            // check matching
+            
             if (
                 (last == '(' && exp[i] != ')') ||
                 (last == '{' && exp[i] != '}') ||
@@ -54,7 +54,7 @@ int main() {
         }
     }
 
-    // after checking whole expression
+    
     if (top == -1)
         printf("BALANCED\n");
     else
