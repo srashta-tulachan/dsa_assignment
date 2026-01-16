@@ -17,6 +17,7 @@ In this program:
 #define MAX 100
 char stack[MAX];
 int top = -1;
+```
 
 EXPLAINATION:
 MAX defines the maximum size of the stack.
@@ -33,10 +34,12 @@ Function 1: push(char c)
 Purpose:
 To insert an opening bracket into the stack.
 
+```c
 void push(char c) {
     top++;
     stack[top] = c;
 }
+```
 
 ### EXPLAINATION:
 The top value is increased by 1.
@@ -47,9 +50,11 @@ Function 2: pop()
 Purpose:
 To remove and return the top element from the stack.
 
+```c
 char pop() {
     return stack[top--];
 }
+```
 ### EXPLAINATION:
 The function returns the element currently at the top.
 After returning, the top value is decreased.
@@ -62,7 +67,7 @@ The main() function controls the entire flow of the program.
 
 STEPS performed in main():
 
-Declare variables to store the expression and loop index.
+ Declare variables to store the expression and loop index.
 Take the expression as input from the user.
 Traverse each character of the expression using a loop.
 If an opening bracket is found:
@@ -80,7 +85,7 @@ This ensures all brackets are properly opened and closed in the correct order.
 
 ## Q4. What is the sample output of a complete run of the program?
 
-### gAnswer:
+### Answer:
 Sample Input:
 Enter expression: {[()]}
 Sample Output:
