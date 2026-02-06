@@ -62,7 +62,7 @@ This function is used when a closing bracket is encountered.
 
 ## Q3. How is the main() function organized?
 
-###Answer:
+### Answer:
 The main() function controls the entire flow of the program.
 
 STEPS performed in main():
